@@ -20,7 +20,7 @@ pipeline {
         stage('Package') { 
             steps{
                 
-    xldCreatePackage artifactsPath: 'target', manifestPath: 'deployit-manifest.xml', darPath: '$JOB_NAME-$BUILD_NUMBER.0.dar'  
+    xldCreatePackage artifactsPath: 'target', manifestPath: 'deployit-manifest.xml', darPath: 'my-app-1.0-$BUILD_NUMBER.0-SNAPSHOT.jar'  
                 
              }
         }
