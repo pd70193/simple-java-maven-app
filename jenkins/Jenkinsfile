@@ -20,7 +20,7 @@ pipeline {
         stage('Package') { 
             steps{
                 
-    xldCreatePackage artifactsPath: '/var/jenkins_home/workspace', manifestPath: 'deployit-manifest.xml', darPath: 'my-app-1.0-$BUILD_NUMBER.0-SNAPSHOT.jar'  
+    xldCreatePackage artifactsPath: '/workspace', manifestPath: 'deployit-manifest.xml', darPath: '$JOB_NAME-$BUILD_NUMBER.0.dar'  
                 
              }
         }      
