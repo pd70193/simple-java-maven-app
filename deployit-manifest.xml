@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <udm.DeploymentPackage version="1.0" application="PetClinic">
   <deployables> 
-  <jee.War name="sample_java_maven_app" file="sample_java_maven_app-1.0.war">
+  <jee.War name="sample_java_maven_app" file="jenkins101-pd70193-$BUILD_NUMBER.0.dar">
   </jee.War>
   </deployables>
 </udm.DeploymentPackage>
